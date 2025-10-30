@@ -1,8 +1,8 @@
 npm run dev
 npm run build
 
-# Build the Docker
-docker build -t version-control-app .
+# Build and run the Docker
+docker-compose up --build
 
-# Run the Docker
-docker run -p 5000:5000 version-control-app
+# Stop everything
+docker-compose down
